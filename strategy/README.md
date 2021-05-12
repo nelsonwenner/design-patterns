@@ -3,8 +3,7 @@
 </h1>
 
 ## :bulb: About
-Define a family of algorithms, encapsulate each one, and make them interchangeable. Strategy lets the algorithm vary independently from the clients that use it.
-Capture the abstraction in an interface, bury implementation details in derived classes.
+In Strategy pattern, a class behavior or its algorithm can be changed at run time. This type of design pattern comes under behavior pattern. In the Strategy pattern, we create objects that represent various strategies and an object whose behavior varies according to its strategy object. The strategy object changes the object's execution algorithm.
 
 
 ## :rocket: Technologies
