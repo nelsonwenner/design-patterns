@@ -32,9 +32,17 @@ class TaxCalculator {
   }
 }
 
-const calculator = new TaxCalculator()
+class Main {
+  constructor() {}
 
-console.log('\nICMS: ', calculator.calculate(new ICMS(), 100))
-console.log('IOF: ', calculator.calculate(new IOF(), 100))
-console.log('ISS: ', calculator.calculate(new ISS(), 100))
-console.log('ISSQN: ', calculator.calculate(new ISSQN(), 100))
+  public main(): void {
+    const calculator = new TaxCalculator()
+
+    console.log('\nICMS: ', calculator.calculate(new ICMS(), 100))
+    console.log('IOF: ', calculator.calculate(new IOF(), 100))
+    console.log('ISS: ', calculator.calculate(new ISS(), 100))
+    console.log('ISSQN: ', calculator.calculate(new ISSQN(), 100))    
+  }
+}
+
+new Main().main()
